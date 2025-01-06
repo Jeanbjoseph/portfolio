@@ -24,3 +24,11 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+.profile-image {
+    width: 120px; /* Ajuste o tamanho conforme necessário */
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-bottom: 1rem;
+}
