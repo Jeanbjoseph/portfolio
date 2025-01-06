@@ -1,34 +1,106 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset básico */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
-}
-header {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-}
-section {
-    padding: 2rem;
-    margin: 1rem;
-}
-h1, h2 {
     color: #333;
+    background-color: #f4f4f4;
 }
-a {
-    color: #0066cc;
-    text-decoration: none;
+
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: linear-gradient(135deg, #4a90e2, #50b5a9);
+    color: #fff;
 }
-a:hover {
-    text-decoration: underline;
+
+.profile {
+    margin-bottom: 1rem;
 }
 
 .profile-image {
-    width: 120px; /* Ajuste o tamanho conforme necessário */
-    height: 120px;
+    width: 120px; /* Ajuste o tamanho aqui */
+    height: 120px; /* Ajuste o tamanho aqui */
     border-radius: 50%;
     border: 3px solid #fff;
     margin-bottom: 1rem;
+    object-fit: cover; /* Garante que a imagem seja cortada proporcionalmente */
 }
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background: #333;
+    padding: 0.5rem 0;
+}
+
+.navbar li {
+    list-style: none;
+    margin: 0 1rem;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #50b5a9;
+}
+
+main {
+    padding: 2rem 1rem;
+    max-width: 900px;
+    margin: auto;
+}
+
+section {
+    margin-bottom: 2rem;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-item {
+    background: #e6f7f7;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project-item h3 {
+    margin-bottom: 0.5rem;
+}
+
+.project-item a {
+    color: #007acc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.project-item a:hover {
+    color: #50b5a9;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: #fff;
+    margin-top: 2
