@@ -24,8 +24,8 @@ header {
 }
 
 .profile-image {
-    width: 120px; /* Ajuste o tamanho aqui */
-    height: 120px; /* Ajuste o tamanho aqui */
+    width: 50px; /* Ajuste o tamanho aqui */
+    height: 50px; /* Ajuste o tamanho aqui */
     border-radius: 50%;
     border: 3px solid #fff;
     margin-bottom: 1rem;
